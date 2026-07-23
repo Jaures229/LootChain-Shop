@@ -10,6 +10,23 @@ states/
 *.dbg.json
 *.tsbuildinfo
 
-# Optional
+# Compiler files
+cache/
+out/
+
+# Commonly ignored directories
+.logs/
+.ignore/
+
+# Ignores development broadcast logs
+!/broadcast
+/broadcast/*/31337/
+/broadcast/**/dry-run/
+
+# Docs
+docs/
+
+# Dotenv file
 .env
-.env.local
+.env.*
+!.env.example
